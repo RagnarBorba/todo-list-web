@@ -9,11 +9,20 @@
 <body>
   <div class="container">
     <h1>Minha Lista de Tarefas</h1>
+    
+    <div class="filters">
+      <button onclick="setFilter('all')">Todas</button>
+      <button onclick="setFilter('completed')">Concluídas</button>
+      <button onclick="setFilter('pending')">Pendentes</button>
+    </div>
+
     <div class="input-area">
       <input type="text" id="task-input" placeholder="Digite uma nova tarefa..." />
       <button id="add-task-btn">Adicionar</button>
     </div>
     <ul id="task-list"></ul>
+    <button id="clear-all-btn">Limpar todas as tarefas</button>
+
   </div>
 
   <script src="script.js"></script>
